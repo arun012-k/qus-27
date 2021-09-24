@@ -1,0 +1,38 @@
+<html>
+<head>
+    <script src="script1.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <form method="post"  style="text-align: center";>
+         Enter Meter Number:<input type="text" name="number" id="number"/>
+        <input type="button" name="submit" id="submit" onclick="getaction()" value="go"/>
+        <p id="demo"> </p>
+        <div id="options" style="display:none;">
+        <input type='radio' name='radio' onclick='myfunction(this.value)' value='100'/>city<br>
+
+        <input type='radio' name='radio' onclick='myfunction(this.value)' value='200'/>town<br>
+        <input type='radio' name='radio' onclick='myfunction(this.value)' value='300'/>village
+        </div>
+        <div id="display1" style="display:none;">
+        <label> Enter Number of Units Consumed</label>
+        <input type="text" name="amount1" id="amount1" value=""/>
+        <input type="submit" name="submit1" value="submit" onclick="getamount1()"/>
+        </div>
+        <div id="display2" style="display:none;">
+        <label> Enter Number of Units Consumed</label>
+        <input type="text" name="amount2" id="amount2" value=""/>
+        <input type="submit" name="submit2" value="submit" onclick="getamount2()"/>
+        </div>
+        <div id="display3" style="display:none;">
+        <label> Enter Number of Units Consumed</label>
+        <input type="text" name="amount3" id="amount3" value=""/>
+        <input type="submit" name="submit3" value="submit" onclick="getamount3()"/>
+        </div>
+        </form>
+</body>
+</html>
